@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notatnik.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="AliceBlue">
+
+            <Label
+                Text="Notatki"
+                TextColor="MediumBlue"
+                FontSize="32"/>
+
+            <ListView
+                
+            />
+
+            <Label
+                Text="Dodanie notatki"
+                FontSize="24"
+                TextColor="MediumBlue"
+                />
+
+            <Label
+                Text="Tytuł notatki: "
+             />
+            
+            <Entry
+                x:Name="wpisanyTytulNotatki"
+             />
+
+            <Label
+                Text="Treść notatki: "
+             />
+
+            <Entry
+                x:Name="wpisanaTrescNotatki"
+             />
+
+            <Button
+                x:Name="przyciskDODAJ"
+                Text="DODAJ"
+                HorizontalOptions="Fill"
+                TextColor="MediumBlue"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
